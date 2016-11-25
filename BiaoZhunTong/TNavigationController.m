@@ -1,22 +1,22 @@
 //
-//  HomeViewController.m
+//  TNavigationController.m
 //  BiaoZhunTong
 //
 //  Created by txx on 16/11/25.
 //  Copyright © 2016年 txx. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "TNavigationController.h"
 
-@interface HomeViewController ()
+@interface TNavigationController ()
 
 @end
 
-@implementation HomeViewController
+@implementation TNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

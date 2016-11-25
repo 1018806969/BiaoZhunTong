@@ -1,5 +1,5 @@
 //
-//  HomeViewController.h
+//  TPersonalCenterViewController.h
 //  BiaoZhunTong
 //
 //  Created by txx on 16/11/25.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface TPersonalCenterViewController : UIViewController
 
 @end

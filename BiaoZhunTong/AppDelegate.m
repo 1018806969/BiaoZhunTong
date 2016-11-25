@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
+#import "TTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[HomeViewController alloc]init];
+    self.window.rootViewController = [[TTabBarController alloc]init];
     
 
     return YES;
