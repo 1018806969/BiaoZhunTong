@@ -21,10 +21,10 @@
     [super viewDidLoad];
     
     THomeViewController *homeVc = [[THomeViewController alloc]init];
-    [self addChildViewController:homeVc title:@"home" imageName:@""];
+    [self addChildViewController:homeVc title:@"home" imageName:@"home"];
     
     TPersonalCenterViewController *personalVc = [[TPersonalCenterViewController alloc]init];
-    [self addChildViewController:personalVc title:@"personal" imageName:@""];
+    [self addChildViewController:personalVc title:@"personal" imageName:@"personal"];
     
 }
 -(void)addChildViewController:(UIViewController *)childController title:(NSString *)title imageName:(NSString *)name
