@@ -1,13 +1,15 @@
 //
-//  CarouselScrollview.h
+//  TCarouselScrollView.m
 //  BiaoZhunTong
 //
 //  Created by txx on 16/11/25.
 //  Copyright © 2016年 txx. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TCarouselScrollView.h"
 
-@interface CarouselScrollview : UIScrollView
+@implementation TCarouselScrollView
+
+
 
 @end

@@ -11,10 +11,12 @@
 		B49745B11DE7EEA600431D85 /* TNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49745B01DE7EEA600431D85 /* TNavigationController.m */; };
 		B49745B41DE7EECA00431D85 /* TTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49745B31DE7EECA00431D85 /* TTabBarController.m */; };
 		B49745B71DE7EF7400431D85 /* TPersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49745B61DE7EF7400431D85 /* TPersonalCenterViewController.m */; };
-		B49745BA1DE8376100431D85 /* CarouselScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = B49745B91DE8376100431D85 /* CarouselScrollview.m */; };
+		B49745BD1DE83B2100431D85 /* TCarouselScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B49745BC1DE83B2100431D85 /* TCarouselScrollView.m */; };
+		B49745C01DE8427400431D85 /* TViewOfButton1.m in Sources */ = {isa = PBXBuildFile; fileRef = B49745BF1DE8427400431D85 /* TViewOfButton1.m */; };
 		B497CA091DE590A000622829 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B497CA081DE590A000622829 /* main.m */; };
 		B497CA0C1DE590A000622829 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B497CA0B1DE590A000622829 /* AppDelegate.m */; };
 		B497CA141DE590A000622829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B497CA131DE590A000622829 /* Assets.xcassets */; };
+		B4CB47D91DE968B0001E4B67 /* TViewOfButton2.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB47D81DE968B0001E4B67 /* TViewOfButton2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,14 +28,18 @@
 		B49745B31DE7EECA00431D85 /* TTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTabBarController.m; sourceTree = "<group>"; };
 		B49745B51DE7EF7400431D85 /* TPersonalCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPersonalCenterViewController.h; sourceTree = "<group>"; };
 		B49745B61DE7EF7400431D85 /* TPersonalCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPersonalCenterViewController.m; sourceTree = "<group>"; };
-		B49745B81DE8376100431D85 /* CarouselScrollview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselScrollview.h; sourceTree = "<group>"; };
-		B49745B91DE8376100431D85 /* CarouselScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselScrollview.m; sourceTree = "<group>"; };
+		B49745BB1DE83B2100431D85 /* TCarouselScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCarouselScrollView.h; sourceTree = "<group>"; };
+		B49745BC1DE83B2100431D85 /* TCarouselScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCarouselScrollView.m; sourceTree = "<group>"; };
+		B49745BE1DE8427400431D85 /* TViewOfButton1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TViewOfButton1.h; sourceTree = "<group>"; };
+		B49745BF1DE8427400431D85 /* TViewOfButton1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TViewOfButton1.m; sourceTree = "<group>"; };
 		B497CA041DE590A000622829 /* BiaoZhunTong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiaoZhunTong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B497CA081DE590A000622829 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B497CA0A1DE590A000622829 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B497CA0B1DE590A000622829 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B497CA131DE590A000622829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B497CA181DE590A000622829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4CB47D71DE968B0001E4B67 /* TViewOfButton2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TViewOfButton2.h; sourceTree = "<group>"; };
+		B4CB47D81DE968B0001E4B67 /* TViewOfButton2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TViewOfButton2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +80,12 @@
 				B49745B01DE7EEA600431D85 /* TNavigationController.m */,
 				B49745AC1DE7EE7200431D85 /* THomeViewController.h */,
 				B49745AD1DE7EE7200431D85 /* THomeViewController.m */,
-				B49745B81DE8376100431D85 /* CarouselScrollview.h */,
-				B49745B91DE8376100431D85 /* CarouselScrollview.m */,
+				B49745BE1DE8427400431D85 /* TViewOfButton1.h */,
+				B49745BF1DE8427400431D85 /* TViewOfButton1.m */,
+				B4CB47D71DE968B0001E4B67 /* TViewOfButton2.h */,
+				B4CB47D81DE968B0001E4B67 /* TViewOfButton2.m */,
+				B49745BB1DE83B2100431D85 /* TCarouselScrollView.h */,
+				B49745BC1DE83B2100431D85 /* TCarouselScrollView.m */,
 				B49745B51DE7EF7400431D85 /* TPersonalCenterViewController.h */,
 				B49745B61DE7EF7400431D85 /* TPersonalCenterViewController.m */,
 				B497CA071DE590A000622829 /* Supporting Files */,
@@ -165,10 +175,12 @@
 			files = (
 				B497CA0C1DE590A000622829 /* AppDelegate.m in Sources */,
 				B497CA091DE590A000622829 /* main.m in Sources */,
-				B49745BA1DE8376100431D85 /* CarouselScrollview.m in Sources */,
 				B49745B71DE7EF7400431D85 /* TPersonalCenterViewController.m in Sources */,
 				B49745B41DE7EECA00431D85 /* TTabBarController.m in Sources */,
+				B49745C01DE8427400431D85 /* TViewOfButton1.m in Sources */,
 				B49745B11DE7EEA600431D85 /* TNavigationController.m in Sources */,
+				B4CB47D91DE968B0001E4B67 /* TViewOfButton2.m in Sources */,
+				B49745BD1DE83B2100431D85 /* TCarouselScrollView.m in Sources */,
 				B49745AE1DE7EE7200431D85 /* THomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
