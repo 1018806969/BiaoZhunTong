@@ -9,6 +9,7 @@
 #import "THomeViewController.h"
 #import "TViewOfButton1.h"
 #import "TViewOfButton2.h"
+#import "TTableOrderView.h"
 
 #define Screen_W    [UIScreen mainScreen].bounds.size.width
 #define Screen_H    [UIScreen mainScreen].bounds.size.height
@@ -26,6 +27,7 @@
 
 @property(nonatomic,strong)TViewOfButton1  *fourView;
 @property(nonatomic,strong)TViewOfButton2  *fiveView;
+@property(nonatomic,strong)TTableOrderView *orderView;
 
 
 @end
@@ -35,8 +37,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    NSLog(@"===--==%@",NSStringFromCGRect(self.tabBarController.tabBar.frame));
     [self.view addSubview:self.bgScrollView];
+    [self.view addSubview:self.orderView];
     [self originalTarBar];
     
 }
@@ -49,6 +52,12 @@
         _barImageView.alpha = alpha ;
         _barImageView.backgroundColor = [UIColor blueColor];
         NSLog(@"%@===%f",scrollView,scrollView.contentOffset.y) ;
+        if (scrollView.contentOffset.y > 250.0) {
+            _orderView.hidden = NO ;
+        }else
+        {
+            _orderView.hidden = YES ;
+        }
     }
 }
 -(void)button:(UIButton *)button clickOfIndex:(NSUInteger)index
@@ -59,15 +68,24 @@
 {
     return  30 ;
 }
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 40 ;
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *reuser_id = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuser_id];
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuser_id];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     cell.textLabel.text = [NSString stringWithFormat:@"%ld-%ld",(long)indexPath.section,(long)indexPath.row];
     return cell ;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"click cell %ld-%ld",(long)indexPath.row,(long)indexPath.section);
 }
 #pragma mark--------------------private respose--------------
 -(void)searchClick
@@ -104,10 +122,10 @@
 -(UIScrollView *)bgScrollView
 {
     if (!_bgScrollView) {
-        _bgScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, Screen_W, Screen_H)];
+        _bgScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, Screen_W, Screen_H-49)];
         _bgScrollView.backgroundColor = [UIColor grayColor];
         _bgScrollView.delegate = self ;
-        _bgScrollView.contentSize = CGSizeMake(Screen_W, 250+Screen_H);
+        _bgScrollView.contentSize = CGSizeMake(Screen_W, 1515);
         [_bgScrollView addSubview:self.adScrollView];
         [_bgScrollView addSubview:self.fourView];
         [_bgScrollView addSubview:self.fiveView];
@@ -152,13 +170,26 @@
     }
     return _fiveView;
 }
+-(TTableOrderView *)orderView
+{
+    if (!_orderView) {
+        _orderView = [[TTableOrderView alloc]initWithFrame:CGRectMake(0, 64, Screen_W,44)];
+        _orderView.backgroundColor = [UIColor redColor];
+        _orderView.hidden = YES ;
+    }
+    return _orderView ;
+}
 -(UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 315, Screen_W, Screen_H-110) style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 315, Screen_W,1200) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self ;
         _tableView.scrollEnabled = NO;
+        TTableOrderView * orderV = [[TTableOrderView alloc]initWithFrame:CGRectMake(0, 0, Screen_W,44)];
+        orderV.backgroundColor = [UIColor redColor];
+
+        _tableView.tableHeaderView = orderV;
     }
     return _tableView ;
 }

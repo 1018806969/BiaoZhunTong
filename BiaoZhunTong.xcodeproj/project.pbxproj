@@ -17,9 +17,15 @@
 		B497CA0C1DE590A000622829 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B497CA0B1DE590A000622829 /* AppDelegate.m */; };
 		B497CA141DE590A000622829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B497CA131DE590A000622829 /* Assets.xcassets */; };
 		B4CB47D91DE968B0001E4B67 /* TViewOfButton2.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB47D81DE968B0001E4B67 /* TViewOfButton2.m */; };
+		B4CB47DC1DE98670001E4B67 /* THomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB47DB1DE98670001E4B67 /* THomeTableViewCell.m */; };
+		B4CB47DF1DEBBBC5001E4B67 /* TTableOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB47DE1DEBBBC5001E4B67 /* TTableOrderView.m */; };
+		C982C81B5036F316735F5E37 /* libPods-BiaoZhunTong.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA75C0C673A6EEC336D9DC1 /* libPods-BiaoZhunTong.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02FB5E919239FDD8EC7DB895 /* Pods-BiaoZhunTong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiaoZhunTong.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiaoZhunTong/Pods-BiaoZhunTong.release.xcconfig"; sourceTree = "<group>"; };
+		2FA75C0C673A6EEC336D9DC1 /* libPods-BiaoZhunTong.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BiaoZhunTong.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A95599597CAF64A467854A1 /* Pods-BiaoZhunTong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiaoZhunTong.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiaoZhunTong/Pods-BiaoZhunTong.debug.xcconfig"; sourceTree = "<group>"; };
 		B49745AC1DE7EE7200431D85 /* THomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THomeViewController.h; sourceTree = "<group>"; };
 		B49745AD1DE7EE7200431D85 /* THomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THomeViewController.m; sourceTree = "<group>"; };
 		B49745AF1DE7EEA600431D85 /* TNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNavigationController.h; sourceTree = "<group>"; };
@@ -40,6 +46,10 @@
 		B497CA181DE590A000622829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4CB47D71DE968B0001E4B67 /* TViewOfButton2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TViewOfButton2.h; sourceTree = "<group>"; };
 		B4CB47D81DE968B0001E4B67 /* TViewOfButton2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TViewOfButton2.m; sourceTree = "<group>"; };
+		B4CB47DA1DE98670001E4B67 /* THomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THomeTableViewCell.h; sourceTree = "<group>"; };
+		B4CB47DB1DE98670001E4B67 /* THomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THomeTableViewCell.m; sourceTree = "<group>"; };
+		B4CB47DD1DEBBBC5001E4B67 /* TTableOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTableOrderView.h; sourceTree = "<group>"; };
+		B4CB47DE1DEBBBC5001E4B67 /* TTableOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTableOrderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C982C81B5036F316735F5E37 /* libPods-BiaoZhunTong.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53B35328F741B5316DAA50EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A95599597CAF64A467854A1 /* Pods-BiaoZhunTong.debug.xcconfig */,
+				02FB5E919239FDD8EC7DB895 /* Pods-BiaoZhunTong.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76F16CF4164040118F28D37B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FA75C0C673A6EEC336D9DC1 /* libPods-BiaoZhunTong.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B497C9FB1DE590A000622829 = {
 			isa = PBXGroup;
 			children = (
 				B497CA061DE590A000622829 /* BiaoZhunTong */,
 				B497CA051DE590A000622829 /* Products */,
+				53B35328F741B5316DAA50EA /* Pods */,
+				76F16CF4164040118F28D37B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,8 +114,12 @@
 				B49745BF1DE8427400431D85 /* TViewOfButton1.m */,
 				B4CB47D71DE968B0001E4B67 /* TViewOfButton2.h */,
 				B4CB47D81DE968B0001E4B67 /* TViewOfButton2.m */,
+				B4CB47DA1DE98670001E4B67 /* THomeTableViewCell.h */,
+				B4CB47DB1DE98670001E4B67 /* THomeTableViewCell.m */,
 				B49745BB1DE83B2100431D85 /* TCarouselScrollView.h */,
 				B49745BC1DE83B2100431D85 /* TCarouselScrollView.m */,
+				B4CB47DD1DEBBBC5001E4B67 /* TTableOrderView.h */,
+				B4CB47DE1DEBBBC5001E4B67 /* TTableOrderView.m */,
 				B49745B51DE7EF7400431D85 /* TPersonalCenterViewController.h */,
 				B49745B61DE7EF7400431D85 /* TPersonalCenterViewController.m */,
 				B497CA071DE590A000622829 /* Supporting Files */,
@@ -110,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B497CA1B1DE590A000622829 /* Build configuration list for PBXNativeTarget "BiaoZhunTong" */;
 			buildPhases = (
+				F5DC693E1E97ACEC0B22080F /* [CP] Check Pods Manifest.lock */,
 				B497CA001DE590A000622829 /* Sources */,
 				B497CA011DE590A000622829 /* Frameworks */,
 				B497CA021DE590A000622829 /* Resources */,
+				4855B44F89F736A08C2E9EF6 /* [CP] Embed Pods Frameworks */,
+				B8882A59A5FE3EEC998C5FB2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,11 +205,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4855B44F89F736A08C2E9EF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiaoZhunTong/Pods-BiaoZhunTong-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8882A59A5FE3EEC998C5FB2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiaoZhunTong/Pods-BiaoZhunTong-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5DC693E1E97ACEC0B22080F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B497CA001DE590A000622829 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CB47DF1DEBBBC5001E4B67 /* TTableOrderView.m in Sources */,
 				B497CA0C1DE590A000622829 /* AppDelegate.m in Sources */,
 				B497CA091DE590A000622829 /* main.m in Sources */,
 				B49745B71DE7EF7400431D85 /* TPersonalCenterViewController.m in Sources */,
@@ -180,6 +266,7 @@
 				B49745C01DE8427400431D85 /* TViewOfButton1.m in Sources */,
 				B49745B11DE7EEA600431D85 /* TNavigationController.m in Sources */,
 				B4CB47D91DE968B0001E4B67 /* TViewOfButton2.m in Sources */,
+				B4CB47DC1DE98670001E4B67 /* THomeTableViewCell.m in Sources */,
 				B49745BD1DE83B2100431D85 /* TCarouselScrollView.m in Sources */,
 				B49745AE1DE7EE7200431D85 /* THomeViewController.m in Sources */,
 			);
@@ -278,6 +365,7 @@
 		};
 		B497CA1C1DE590A000622829 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A95599597CAF64A467854A1 /* Pods-BiaoZhunTong.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -291,6 +379,7 @@
 		};
 		B497CA1D1DE590A000622829 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02FB5E919239FDD8EC7DB895 /* Pods-BiaoZhunTong.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
